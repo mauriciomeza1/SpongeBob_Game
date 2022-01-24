@@ -188,8 +188,7 @@ function generareEnemies(){
     //En qué intervalo de tiempo quiero que se genere un enemigo
     if(frames % 231 === 120){
         let y = Math.floor(Math.random() * (288 - 10) + 10);
-        let imgRand = Math.floor(Math.random() * imageEnemies.length)
-        const enemy = new Enemy(canvas.width, y, 50, 50, imageEnemies[imgRand])
+        const enemy = new Enemy(canvas.width, y, 50, 50, imageEnemies)
         enemies.push(enemy)
     }
 }
